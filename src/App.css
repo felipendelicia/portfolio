@@ -3,5 +3,6 @@
 }
 
 .app-component-container{
-    margin: 1vh 25vw;
+    width: 50vw;
+    margin: 1em auto;
 }

@@ -1,9 +1,20 @@
-import "../styles/Navbar.css"
+import { INavbarCategories } from "../types/Navbar";
+import routes from "../data/routes";
+import "../styles/Navbar.css";
 
-const Navbar = () => {
-  return (
-    <div>Navbar</div>
-  )
+function NavbarCategories(props: INavbarCategories) {
+  return <p to={props.route}>{props.name}</p>;
 }
 
-export default Navbar
+export default function Navbar() {
+  return (
+    <nav className="navbar-component-container">
+      {routes.map((route, i) => {
+        return (
+          <NavbarCategories name={route.name} route={route.route} key={i} />
+        );
+      })}
+      golas
+    </nav>
+  );
+}
