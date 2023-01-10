@@ -1,9 +1,14 @@
 import { INavbarCategories } from "../types/Navbar";
+import { Link } from "react-router-dom";
 import routes from "../data/routes";
 import "../styles/Navbar.css";
 
 function NavbarCategories(props: INavbarCategories) {
-  return <p to={props.route}>{props.name}</p>;
+  return (
+    <Link to={props.path}>
+      <p>{props.name}</p>
+    </Link>
+  );
 }
 
 export default function Navbar() {
@@ -11,10 +16,9 @@ export default function Navbar() {
     <nav className="navbar-component-container">
       {routes.map((route, i) => {
         return (
-          <NavbarCategories name={route.name} route={route.route} key={i} />
+          <NavbarCategories name={route.name} path={route.path} key={i} />
         );
       })}
-      golas
     </nav>
   );
 }
