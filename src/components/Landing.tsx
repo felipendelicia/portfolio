@@ -12,7 +12,7 @@ export default function Landing() {
         Hola! si deseas ponerte en contacto conmigo, escríbeme a{" "}
         <a href="mailto:delicia4581@gmail.com">delicia4581@gmail.com</a> ✍️
       </p>
-      <a className="download-cv" href="./doc/Felipe.pdf" download='Felipe.pdf'>
+      <a className="download-cv" href="./assets/doc/cv.pdf" download='Felipe.pdf'>
         Descarga mi CV
       </a>
       <div className="socialmedia-container">
