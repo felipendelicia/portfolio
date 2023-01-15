@@ -1,7 +1,9 @@
 export default function Portfolio() {
   return (
     <div className="portfolio-component-container content" id="portfolio">
-      Portfolio
+      <h1>Portafolio</h1>
+      <hr />
+      
     </div>
   );
 }
