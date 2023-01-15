@@ -12,7 +12,7 @@
 }
 
 .backdrop-sidebar{
-    background-color: var(--black-color);
+    background-color: var(--secundary-color);
     opacity: .1;
     width: 100%;
     height: 100%;
@@ -20,7 +20,7 @@
 
 .project-sidebar{
     overflow: scroll;
-    background-color: var(--white-color);
+    background-color: var(--main-color);
     height: 100%;
     width: 100%;
 }
@@ -35,7 +35,7 @@
     top: 10px;
     right: 30px;
     font-size: 3em;
-    color: var(--black-color);
+    color: var(--secundary-color);
     cursor: pointer;
     z-index: 1000;
 }
@@ -51,7 +51,7 @@
 .project-sidebar .img-container{
     width: 100%;
     height: 40vh;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: var(--shadow-color) 0px 8px 24px;
     border-radius: 12px;
 }
 

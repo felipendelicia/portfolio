@@ -1,6 +1,6 @@
 .aside-centered-div{
-    background-color: rgb(237, 237, 237);
-    color: var(--black-color);
+    background-color: var(--aside-bg);
+    color: var(--secundary-color);
     position: fixed;
     height: 100%;
     width: 20%;
@@ -13,7 +13,7 @@
 
 .aside-centered-div hr{
     width: 50%;
-    color: var(--black-color);
+    color: var(--secundary-color);
 }
 
 .aside-centered-div section {
