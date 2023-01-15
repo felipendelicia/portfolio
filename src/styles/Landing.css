@@ -1,0 +1,8 @@
+.socialmedia-container {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia-container a{
+    font-size: 3em;
+}
