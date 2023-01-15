@@ -1,5 +1,3 @@
-import "../styles/Formation.css";
-
 export default function Formation() {
   return (
     <div className="formation-component-container content" id="formation">

@@ -1,9 +1,0 @@
-.formation-component-container{
-    width: 80%;
-    height: 100vh;
-    padding: 0 3em;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-}

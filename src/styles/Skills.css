@@ -1,0 +1,71 @@
+.tech {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 20px
+}
+
+.tech span {
+    padding: 0.5em  1em;
+    font-size: 1.1em;
+}
+
+.tech .html {
+    background-color:  #f3632a;
+    color: #fff;
+}
+
+.tech .css {
+    background-color: #244ce4;
+    color: #fff;
+}
+
+.tech .javascript {
+    background-color:  #debb1e;
+    color: #fff;
+}
+
+.tech .node {
+    background-color:  #7db200 ;
+    color: #fff;
+}
+
+.tech .express {
+    background-color: #000;
+    color: #fff;
+}
+
+.tech .react{
+    background-color: #40acca ;
+    color: #fff;
+}
+
+.tech .python {
+    background-color: #caae2d ;
+    color: #fff;
+}
+
+.tech .git {
+    background-color:  #f45434 ;
+    color: #fff;
+}
+
+.tech .redux {
+    background-color: #6b33b4 ;
+    color: #fff;
+}
+
+.tech .typescript {
+    background-color:  #186ec4 ;
+    color: #fff;
+}
+
+.tech .mysql {
+    background-color: #04648c ;
+    color: #fff ;
+}
+
+.tech .mongo {
+    background-color:  #1c9e54 ;
+    color: #fff;
+}
