@@ -10,7 +10,7 @@ export default function Aside() {
         <section>
           <div className="section-page">
           <FontAwesomeIcon icon={faCircleUser}/>
-          <a href="#landing">Felipe Delicia</a>
+          <a href="#landing">Felipe N. Delicia</a>
           </div>
         </section>
         <hr/>

@@ -5,7 +5,6 @@
 
 .tech-contact span{
     transition: background-color, color 0.5s ease-in-out;
-    font-size: 1.1em;
     cursor: none;
 }
 

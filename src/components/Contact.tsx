@@ -1,7 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedin, faReact } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
 import { faInbox, faFlag } from "@fortawesome/free-solid-svg-icons";
-import '../styles/Contact.css'
+import "../styles/Contact.css";
 
 export default function Contact() {
   return (
@@ -27,14 +31,31 @@ export default function Contact() {
       </p>
       <p>
         <FontAwesomeIcon icon={faGithub} /> Github{" "}
-        <a href="mailto:delicia4581@gmail.com" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/felipendelicia"
+          target="_blank"
+          rel="noreferrer"
+        >
           github.com/felipendelicia
         </a>
       </p>
-      <h4>powered by</h4>
+      <h4>
+        <a
+          href="https://github.com/felipendelicia/portfolio"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FontAwesomeIcon icon={faGithub} /> source
+        </a>
+        {' '}- powered by{" "}
+      </h4>
       <div className="tech-contact">
-        <span className="react"><FontAwesomeIcon icon={faReact} /> React.js</span>
-        <span className="typescript"><FontAwesomeIcon icon={faFlag} /> Typescript</span>
+        <span className="react">
+          <FontAwesomeIcon icon={faReact} /> React.js
+        </span>
+        <span className="typescript">
+          <FontAwesomeIcon icon={faFlag} /> Typescript
+        </span>
       </div>
     </div>
   );

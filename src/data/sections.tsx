@@ -3,7 +3,6 @@ import {
   faComment,
   faDiagramProject,
   faGraduationCap,
-  faTerminal,
   faPaperPlane,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -14,19 +13,14 @@ const sections = [
         icon: <FontAwesomeIcon icon={faComment}/>
     },
     {
-        title: 'Portafolio',
-        path: '#portfolio',
-        icon: <FontAwesomeIcon icon={faDiagramProject}/>
-    },
-    {
         title: 'Formacion',
         path: '#formation',
         icon: <FontAwesomeIcon icon={faGraduationCap}/>
     },
     {
-        title: 'Habilidades',
-        path: '#skills',
-        icon: <FontAwesomeIcon icon={faTerminal}/>
+        title: 'Portafolio',
+        path: '#portfolio',
+        icon: <FontAwesomeIcon icon={faDiagramProject}/>
     },
     {
         title: 'Contacto',

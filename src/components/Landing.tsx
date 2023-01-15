@@ -5,7 +5,7 @@ import "../styles/Landing.css";
 export default function Landing() {
   return (
     <div className="landing-component-container content" id="landing">
-      <h1>Felipe Delicia</h1>
+      <h1>Felipe Nahuel Delicia</h1>
       <hr />
       <h2>Programador Full Stack</h2>
       <p>
