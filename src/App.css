@@ -8,19 +8,3 @@
     display: grid;
     grid-template-columns: 20% 80%;
 }
-
-.content hr {
-    width: 50%;
-}
-
-.content button {
-    width: 20%;
-    padding: 1em 2em;
-    font-size: 1em;
-    border: 2px solid #000;
-    border-radius: 10px;
-}
-
-.content a{
-    text-decoration: underline;
-}

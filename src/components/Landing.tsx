@@ -11,6 +11,7 @@ export default function Landing() {
       <p>
         Hola! si deseas ponerte en contacto conmigo, escríbeme a{" "}
         <a href="mailto:delicia4581@gmail.com">delicia4581@gmail.com</a>
+        {' '}✍️
       </p>
       <button>Descarga mi CV</button>
       <div className="socialmedia-container">
