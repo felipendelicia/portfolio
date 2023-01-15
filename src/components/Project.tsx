@@ -10,7 +10,7 @@ export default function Project(props: IProyectProps) {
   return (
     <>
       <div className="project-component-cotainer">
-        <h3 onClick={()=>setShowSidebar(true)}>{props.name}</h3>
+        <h3 onClick={() => setShowSidebar(true)}>{props.name}</h3>
         <p>{shortDescription + "..."}</p>
         <div className="poweredby">
           {props.stack.map((tech, i) => {
@@ -25,6 +25,12 @@ export default function Project(props: IProyectProps) {
       <ProjectSidebar
         showSidebar={showSidebar}
         setShowSidebar={(bool: boolean) => setShowSidebar(bool)}
+        name={props.name}
+        description={props.description}
+        url={props.url}
+        source={props.source}
+        imgURL={props.imgURL}
+        stack={props.stack}
       />
     </>
   );

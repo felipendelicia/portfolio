@@ -10,7 +10,7 @@ export interface IProyectProps {
 
 }
 
-export interface IProjectSidebarProps {
+export interface IProjectSidebarProps extends IProyectProps {
     showSidebar: boolean;
     setShowSidebar: (bool:boolean)=>void
 }
