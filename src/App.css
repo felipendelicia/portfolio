@@ -8,3 +8,7 @@
     grid-template-columns: 20% 80%;
     background-color:var(--white-color);
 }
+
+.no-scroll{
+    overflow: hidden;
+}

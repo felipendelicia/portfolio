@@ -9,3 +9,8 @@ export interface IProyectProps {
     stack:{icon:ReactElement, name:string}[],
 
 }
+
+export interface IProjectSidebarProps {
+    showSidebar: boolean;
+    setShowSidebar: (bool:boolean)=>void
+}
