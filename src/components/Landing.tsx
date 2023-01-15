@@ -10,10 +10,11 @@ export default function Landing() {
       <h2>Programador Full Stack</h2>
       <p>
         Hola! si deseas ponerte en contacto conmigo, escríbeme a{" "}
-        <a href="mailto:delicia4581@gmail.com">delicia4581@gmail.com</a>
-        {' '}✍️
+        <a href="mailto:delicia4581@gmail.com">delicia4581@gmail.com</a> ✍️
       </p>
-      <button>Descarga mi CV</button>
+      <a className="download-cv" href="./doc/Felipe.pdf" download='Felipe.pdf'>
+        Descarga mi CV
+      </a>
       <div className="socialmedia-container">
         <a
           href="https://github.com/felipendelicia"
