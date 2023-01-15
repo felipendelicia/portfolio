@@ -1,15 +1,35 @@
-.switch-theme{
-    display: flex;
-    gap: 5px;
+.switch-theme {
+  display: flex;
+  gap: 5px;
 }
 
-.switch-theme p{
-    padding: 5px 15px;
+.switch-theme p {
+  padding: 5px 15px;
+  border-radius: 10px;
+  transition: backgroud-color, color 0.5s ease-in-out;
+}
+
+#theme-active {
+  color: var(--main-color);
+  background-color: var(--secundary-color);
+}
+
+.mobile-theme {
+  display: none;
+}
+
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 1100px) {
+  .mobile-theme {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
     border-radius: 10px;
-    transition: backgroud-color, color 0.5s ease-in-out;
-}
-
-#theme-active{
-    color: var(--main-color);
+    font-size: 2em;
     background-color: var(--secundary-color);
+    color: var(--main-color);
+  }
 }

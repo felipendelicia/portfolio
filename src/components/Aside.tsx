@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Aside.css";
 import sections from "../data/sections";
-import ThemeChanger from "./ThemeChanger";
+import {DesktopTheme} from "./Theme";
 
 export default function Aside() {
   return (
@@ -30,7 +30,7 @@ export default function Aside() {
         <hr/>
         <section>
           <div className="section-page">
-            <ThemeChanger/>
+            <DesktopTheme/>
           </div>
         </section>
       </div>
