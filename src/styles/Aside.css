@@ -1,0 +1,28 @@
+.aside-component-container{
+    background-color: #151515;
+    color: #ffffff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5em;
+    padding: 1em 2em;
+    height: 100vh;
+    width: 15vw;
+}
+.aside-component-container hr {
+    width: 50%;
+}
+
+.aside-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.aside-page{
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    font-size: 1.3em;
+}

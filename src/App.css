@@ -2,7 +2,9 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-.app-component-container{
-    width: 50vw;
-    margin: 1em auto;
+.app{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 85%;
 }
