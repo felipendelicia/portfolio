@@ -1,0 +1,18 @@
+.tech-contact {
+    display: flex;
+    gap: 20px
+}
+
+.tech-contact span{
+    transition: background-color, color 0.5s ease-in-out;
+    font-size: 1.1em;
+    cursor: none;
+}
+
+.tech-contact .react:hover{
+    color:#40acca
+}
+
+.tech-contact .typescript:hover{
+    color:#186ec4
+}
