@@ -3,7 +3,7 @@ import "../styles/ProjectSidebar.css";
 import { IProjectSidebarProps } from "../types/Props";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faChain } from "@fortawesome/free-solid-svg-icons";
+import { faChain, faClose } from "@fortawesome/free-solid-svg-icons";
 
 export default function ProjectSidebar(props: IProjectSidebarProps) {
   useEffect(() => {
@@ -25,6 +25,12 @@ export default function ProjectSidebar(props: IProjectSidebarProps) {
         onClick={() => props.setShowSidebar(false)}
       ></div>
       <div className="project-sidebar">
+        <div
+          className="close-popup"
+          onClick={() => props.setShowSidebar(false)}
+        >
+          <FontAwesomeIcon icon={faClose} />
+        </div>
         <div className="project-sidebar-content">
           <div className="img-container">
             <img src={props.imgURL} alt={props.name + " sneek peek"} />
@@ -49,15 +55,13 @@ export default function ProjectSidebar(props: IProjectSidebarProps) {
               )}
             </div>
             <div className="project-stack">
-              {
-                props.stack.map((tech, i)=>{
-                  return(
-                    <span key={i}>
-                      {tech.icon} {tech.name}
-                    </span>
-                  )
-                })
-              }
+              {props.stack.map((tech, i) => {
+                return (
+                  <span key={i}>
+                    {tech.icon} {tech.name}
+                  </span>
+                );
+              })}
             </div>
           </div>
         </div>

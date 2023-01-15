@@ -19,6 +19,7 @@
 }
 
 .project-sidebar{
+    overflow: scroll;
     background-color: var(--white-color);
     height: 100%;
     width: 100%;
@@ -27,6 +28,16 @@
 .show-sidebar {
     opacity: 1;
     top: 0;
+}
+
+.close-popup{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 3em;
+    color: var(--black-color);
+    cursor: pointer;
+    z-index: 1000;
 }
 
 .project-sidebar-content{
@@ -40,12 +51,15 @@
 .project-sidebar .img-container{
     width: 100%;
     height: 40vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 12px;
 }
 
 .project-sidebar .img-container img{
     object-fit:contain;
     width: 100%;
     height: 100%;
+    border-radius: 12px;
 }
 
 .project-content{
@@ -65,4 +79,19 @@
     display: grid;
     grid-template-columns: 33% 33% 33%;
     gap: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+    .project-stack{
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .backdrop-sidebar{
+        display: none;
+    }
+    .project-sidebar-container{
+        display: block;
+    }
 }

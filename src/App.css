@@ -4,13 +4,24 @@
     font-family: 'Heebo', sans-serif;
 }
 
-.app{
+body{
     width: 100vw;
+}
+
+.app{
+    width: 100%;
     display: grid;
     grid-template-columns: 20% 80%;
     background-color:var(--white-color);
+    overflow: hidden;
 }
 
 .no-scroll{
     overflow: hidden;
+}
+
+@media screen and (max-width: 1100px) {
+    .app{
+        display: block;
+    }
 }

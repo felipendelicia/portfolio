@@ -14,6 +14,7 @@ export default function Projects() {
             source={project.source}
             imgURL={project.imgURL}
             stack={project.stack}
+            key={i}
           />
         );
       })}

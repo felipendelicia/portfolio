@@ -18,7 +18,7 @@ export default function Aside() {
           {
             sections.map((section, i)=>{
               return(
-                <div className="section-page">
+                <div className="section-page" key={i}>
                   {section.icon}
                   <a href={section.path}>{section.title}</a>
                 </div>

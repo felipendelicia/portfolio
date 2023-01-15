@@ -6,7 +6,7 @@
 .content {
   width: 80%;
   height: 100vh;
-  padding: 0 3em;
+  margin: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -44,4 +44,24 @@
   border: 2px solid var(--black-color);
   color: var(--black-color);
   border-radius: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .content-component-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .content {
+    border: none;
+    height: inherit;
+  }
+  .content-component-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 100px 0;
+  }
+  
 }

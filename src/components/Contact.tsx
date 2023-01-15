@@ -47,7 +47,7 @@ export default function Contact() {
         >
           <FontAwesomeIcon icon={faGithub} /> source
         </a>
-        {' '}- powered by{" "}
+        {' '}- powered by:{" "}
       </h4>
       <div className="tech-contact">
         <span className="react">

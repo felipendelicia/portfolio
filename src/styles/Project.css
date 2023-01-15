@@ -10,7 +10,6 @@
 }
 
 .project-component-cotainer .poweredby{
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    gap: 5px;
+    display: flex;
+    gap: 10px;
 }
