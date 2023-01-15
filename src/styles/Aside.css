@@ -1,28 +1,26 @@
-.aside-component-container{
-    background-color: #151515;
-    color: #ffffff;
+.aside-centered-div{
     position: fixed;
-    top: 0;
+    height: 100%;
+    width: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 2.5em;
-    padding: 1em 2em;
-    height: 100vh;
-    width: 15vw;
+    align-items: center;
+    justify-content: center;
 }
-.aside-component-container hr {
+
+.aside-centered-div hr{
     width: 50%;
 }
 
-.aside-section{
+.aside-centered-div section {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
 }
 
-.aside-page{
-    display: grid;
-    grid-template-columns: 25% 1fr;
-    font-size: 1.3em;
+.section-page{
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
 }

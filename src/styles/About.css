@@ -1,0 +1,13 @@
+.about-component-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.socialmedia-container {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia-container a{
+    font-size: 3em;
+}

@@ -7,3 +7,8 @@ a {
     color: inherit;
     text-decoration: inherit;
 }
+
+button {
+    border:inherit;
+    background-color: inherit;
+}
