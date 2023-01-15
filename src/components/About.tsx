@@ -12,11 +12,11 @@ export default function About() {
         aprender nuevas tecnologías y mejorar mis habilidades.
       </p>
       <h3>
-        🎊 Actualmente estudio y busco ampliar mi campo laboral en el mundo del
-        desarrollo web
+        🎊 Actualmente me encuentro estudiando y buscando oportunidades para
+        expandir mi carrera en el área del desarrollo Full Stack.
       </h3>
       <p>
-        Puedes ver toda mi formacion y experiencia laboral en detalle en {' '}
+        Puedes ver toda mi formacion y experiencia laboral en detalle en{" "}
         <a
           href="https://www.linkedin.com/in/felipe-nahuel-delicia-b2487119a/"
           target="_blank"

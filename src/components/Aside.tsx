@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Aside.css";
 import sections from "../data/sections";
+import ThemeChanger from "./ThemeChanger";
 
 export default function Aside() {
   return (
@@ -27,7 +28,11 @@ export default function Aside() {
           }
         </section>
         <hr/>
-        <section></section>
+        <section>
+          <div className="section-page">
+            <ThemeChanger/>
+          </div>
+        </section>
       </div>
     </aside>
   );

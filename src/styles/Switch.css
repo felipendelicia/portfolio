@@ -1,0 +1,15 @@
+.switch-theme{
+    display: flex;
+    gap: 5px;
+}
+
+.switch-theme p{
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition: backgroud-color, color 0.5s ease-in-out;
+}
+
+#theme-active{
+    color: var(--main-color);
+    background-color: var(--secundary-color);
+}
