@@ -1,0 +1,16 @@
+.project-component-cotainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-component-cotainer h3{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.project-component-cotainer .poweredby{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 5px;
+}

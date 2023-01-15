@@ -4,11 +4,12 @@ import { faFlag, faTruckFast } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
   {
-    name: "MODO fixture",
+    name: "⚽ MODO fixture",
     description:
       "Desarrollo de una web para mostrar los resultados del torneo interno de fútbol en MODO. Utilicé ReactJs con typescript para crear los componentes funcionales de la aplicación. Además, seguí la metodología git flow para el control de versiones y el desarrollo de la aplicación.",
     url: "https://modofixture.netlify.app/",
     source: "https://github.com/felipendelicia/MODO-fixture-frontend",
+    imgURL: "./assets/img/modo-fixture.png",
     stack: [
       {
         icon: <FontAwesomeIcon icon={faReact} />,
@@ -21,10 +22,11 @@ const projects = [
     ],
   },
   {
-    name: "Slaves CRUD",
+    name: "👷 Slaves CRUD",
     description:
       "Desarrollo de un CRUD de gestión de esclavos utilizando Node (Express.js y TypeScript) para crear una API que recibe y procesa datos de una base de datos no relacional de MongoDB. El frontend de esta herramienta fue desarrollado en ReactJS y permite mostrar los datos de manera intuitiva en la interfaz de usuario.",
     source: "https://github.com/felipendelicia/slaves-crud",
+    imgURL: "./assets/img/slaves-CRUD.png",
     stack: [
       {
         icon: <FontAwesomeIcon icon={faReact} />,
@@ -49,10 +51,11 @@ const projects = [
     ],
   },
   {
-    name:"codeSchool",
+    name:"🏫 codeSchool",
     description: "Desarrollo una aplicación que enseña desarrollo web. Está construida con React y utiliza TypeScript en el frontend. Para la navegación he utilizado react-router-dom y he implementado transiciones con Framer Motion.",
     url:"https://codeschool-project.netlify.app/",
     source:"https://github.com/felipendelicia/codeschool-project",
+    imgURL: "./assets/img/codeSchool.png",
     stack: [
       {
         icon: <FontAwesomeIcon icon={faReact} />,
@@ -65,9 +68,10 @@ const projects = [
     ]
   },
   {
-    name:"Boyle",
+    name:"🧪 Boyle",
     description: "El proyecto consiste en el desarrollo de un bot de Discord en Python que realiza cálculos comunes en el campo de las ciencias exactas. Gracias a él, logramos avanzar a la feria de ciencias a nivel nacional en el año 2021.",
     source:"https://github.com/felipendelicia/boyle-discord-bot",
+    imgURL: "./assets/img/boyle.png",
     stack: [
       {
         icon: <FontAwesomeIcon icon={faPython} />,
@@ -76,9 +80,10 @@ const projects = [
     ]
   },
   {
-    name:"Pomodoro routine",
+    name:"⌛ Pomodoro routine",
     description: "El proyecto se enfoca en la implementación de la técnica Pomodoro para mejorar la eficiencia en la realización de tareas estudio y trabajo. Se trata de un reloj personalizado que permite marcar períodos de tiempo de descanso y trabajo.",
     source:"https://github.com/felipendelicia/pomodoro-routine",
+    imgURL: "./assets/img/pomodoro-routine.png",
     stack: [
       {
         icon: <FontAwesomeIcon icon={faPython} />,

@@ -12,7 +12,7 @@ export default function Contact() {
     <div className="contact-component-container content" id="contact">
       <h1>Contacto</h1>
       <hr />
-      <h3>Hablemos</h3>
+      <h3>Hablemos 🗣️</h3>
       <p>
         <FontAwesomeIcon icon={faLinkedin} /> Linkedin{" "}
         <a

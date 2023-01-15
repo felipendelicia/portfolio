@@ -1,0 +1,5 @@
+.projects-component-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 25px;
+}
