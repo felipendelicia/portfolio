@@ -1,24 +1,20 @@
 import "../styles/Switch.css";
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import languageContext from "../context/languageContext";
 import { ILenguaje } from "../types/Props";
 
 export const MobileLenguaje = () => {
-  const [lenguaje, setLenguaje] = useState<ILenguaje>("en");
-  const handleChange = (lenguaje: ILenguaje) => setLenguaje(lenguaje);
+  const { language, setLanguage } = useContext(languageContext);
 
-  useEffect(() => {
-  }, [lenguaje]);
-
-  const handleOpositeChange = () =>
-    handleChange(lenguaje === "en" ? "es" : "en");
+  const handleOpositeChange = () => setLanguage(language === 'en' ? 'es' : 'en')
 
   return (
     <div className="mobile-theme" onClick={handleOpositeChange}>
       <p>
-        {lenguaje === "en" ? (
-          <p className="bold">en</p>
+        {language === "en" ? (
+          <b>en</b>
         ) : (
-          <p className="bold">es</p>
+          <b>es</b>
         )}
       </p>
     </div>
@@ -26,23 +22,21 @@ export const MobileLenguaje = () => {
 };
 
 export const DesktopLenguaje = () => {
-  const [lenguaje, setLenguaje] = useState<ILenguaje>("en");
-  const handleChange = (lenguaje: ILenguaje) => setLenguaje(lenguaje);
+  const { language, setLanguage } = useContext(languageContext);
 
-  useEffect(() => {
-  }, [lenguaje]);
+  const handleChange = (language: ILenguaje) => setLanguage(language); console.log(language)
 
   return (
     <div className="switch-theme">
       <p
-        id={lenguaje === "en" ? "lenguaje-active" : "lenguaje-inactive"}
+        id={language === "en" ? "lenguaje-active" : "lenguaje-inactive"}
         onClick={() => handleChange("en")}
         className="bold"
       >
         en
       </p>
       <p
-        id={lenguaje === "es" ? "lenguaje-active" : "lenguaje-inactive"}
+        id={language === "es" ? "lenguaje-active" : "lenguaje-inactive"}
         onClick={() => handleChange("es")}
         className="bold"
       >
