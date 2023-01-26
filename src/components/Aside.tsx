@@ -3,6 +3,7 @@ import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Aside.css";
 import sections from "../data/sections";
 import {DesktopTheme} from "./Theme";
+import { DesktopLenguaje } from "./Lenguaje";
 
 export default function Aside() {
   return (
@@ -31,6 +32,9 @@ export default function Aside() {
         <section>
           <div className="section-page">
             <DesktopTheme/>
+          </div>
+          <div className="section-page">
+            <DesktopLenguaje/>
           </div>
         </section>
       </div>

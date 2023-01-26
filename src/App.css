@@ -2,27 +2,44 @@
 
 * {
     font-family: 'Heebo', sans-serif;
-    transition: color,background-color 0.3s ease-in-out;
+    transition: color, background-color 0.3s ease-in-out;
 }
 
-body{
+body {
     width: 100vw;
 }
 
-.app{
+.app {
     width: 100%;
     display: grid;
     grid-template-columns: 20% 80%;
-    background-color:var(--main-color);
+    background-color: var(--main-color);
     overflow: hidden;
 }
 
-.no-scroll{
+.no-scroll {
     overflow: hidden;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+
 
 @media screen and (max-width: 1100px) {
-    .app{
+    .app {
         display: block;
     }
+
+    .app-mobile-options {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        width: 100%;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+
 }

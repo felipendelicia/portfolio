@@ -1,6 +1,7 @@
 import { ReactElement } from "react";
 
 export type ITheme = "dark" | "light";
+export type ILenguaje = "en" | "es";
 
 export interface IProyectProps {
     name: string;
