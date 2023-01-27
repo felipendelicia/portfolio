@@ -2,39 +2,41 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Aside.css";
 import sections from "../data/sections";
-import {DesktopTheme} from "./Theme";
+import { DesktopTheme } from "./Theme";
 import { DesktopLenguaje } from "./Lenguaje";
+import languageContext from "../context/languageContext";
+import { useContext } from "react";
 
 export default function Aside() {
+  const { language } = useContext(languageContext);
+
   return (
     <aside className="aside-component-container">
       <div className="aside-centered-div">
         <section>
           <div className="section-page">
-          <FontAwesomeIcon icon={faCircleUser}/>
-          <a href="#landing">Felipe N. Delicia</a>
+            <FontAwesomeIcon icon={faCircleUser} />
+            <a href="#landing">Felipe N. Delicia</a>
           </div>
         </section>
-        <hr/>
+        <hr />
         <section>
-          {
-            sections.map((section, i)=>{
-              return(
-                <div className="section-page" key={i}>
-                  {section.icon}
-                  <a href={section.path}>{section.title}</a>
-                </div>
-              )
-            })
-          }
+          {sections.map((section, i) => {
+            return (
+              <div className="section-page" key={i}>
+                {section.icon}
+                <a href={section.path}>{section.title[language]}</a>
+              </div>
+            );
+          })}
         </section>
-        <hr/>
+        <hr />
         <section>
           <div className="section-page">
-            <DesktopTheme/>
+            <DesktopTheme />
           </div>
           <div className="section-page">
-            <DesktopLenguaje/>
+            <DesktopLenguaje />
           </div>
         </section>
       </div>

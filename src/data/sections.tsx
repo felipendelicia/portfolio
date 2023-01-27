@@ -7,26 +7,38 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const sections = [
-    {
-        title: 'Sobre mi',
-        path: '#about',
-        icon: <FontAwesomeIcon icon={faComment}/>
+  {
+    title: {
+      es: "Sobre mi",
+      en: "About me",
     },
-    {
-        title: 'Formacion',
-        path: '#formation',
-        icon: <FontAwesomeIcon icon={faGraduationCap}/>
+    path: "#about",
+    icon: <FontAwesomeIcon icon={faComment} />,
+  },
+  {
+    title: {
+      es: "Formacion",
+      en: "Formation",
     },
-    {
-        title: 'Portafolio',
-        path: '#portfolio',
-        icon: <FontAwesomeIcon icon={faDiagramProject}/>
+    path: "#formation",
+    icon: <FontAwesomeIcon icon={faGraduationCap} />,
+  },
+  {
+    title: {
+      es: "Portafolio",
+      en: "Portfolio",
     },
-    {
-        title: 'Contacto',
-        path: '#contact',
-        icon: <FontAwesomeIcon icon={faPaperPlane}/>
+    path: "#portfolio",
+    icon: <FontAwesomeIcon icon={faDiagramProject} />,
+  },
+  {
+    title: {
+      es: "Contacto",
+      en: "Contact",
     },
-]
+    path: "#contact",
+    icon: <FontAwesomeIcon icon={faPaperPlane} />,
+  },
+];
 
-export default sections
+export default sections;
