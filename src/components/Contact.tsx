@@ -6,13 +6,19 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faInbox, faFlag } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Contact.css";
+import { useContext } from "react";
+import languageContext from "../context/languageContext";
+import language_conf from '../data/language_conf'
 
 export default function Contact() {
+
+  const { language } = useContext(languageContext)
+
   return (
     <div className="contact-component-container content" id="contact">
-      <h1>Contacto</h1>
+      <h1>{language_conf[language].contact_title}</h1>
       <hr />
-      <h3>Hablemos 🗣️</h3>
+      <h3>{language_conf[language].contact_subtitle}</h3>
       <p>
         <FontAwesomeIcon icon={faLinkedin} /> Linkedin{" "}
         <a

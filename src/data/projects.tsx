@@ -1,12 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faNode, faEnvira, faPython } from "@fortawesome/free-brands-svg-icons";
+import {
+  faReact,
+  faNode,
+  faEnvira,
+  faPython,
+} from "@fortawesome/free-brands-svg-icons";
 import { faFlag, faTruckFast } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
   {
     name: "⚽ MODO fixture",
-    description:
-      "Desarrollo de una web para mostrar los resultados del torneo interno de fútbol en MODO. Utilicé ReactJs con typescript para crear los componentes funcionales de la aplicación. Además, seguí la metodología git flow para el control de versiones y el desarrollo de la aplicación.",
+    description: {
+      es: "Desarrollo de una web para mostrar los resultados del torneo interno de fútbol en MODO. Utilicé ReactJs con typescript para crear los componentes funcionales de la aplicación. Además, seguí la metodología git flow para el control de versiones y el desarrollo de la aplicación.",
+      en: "Development of a website to show the results of the internal soccer tournament in MODO. I used ReactJs with typescript to create the functional components of the application. In addition, I followed the git flow methodology for version control and application development.",
+    },
     url: "https://modofixture.netlify.app/",
     source: "https://github.com/felipendelicia/MODO-fixture-frontend",
     imgURL: "./assets/img/modo-fixture.png",
@@ -23,8 +30,10 @@ const projects = [
   },
   {
     name: "👷 Slaves CRUD",
-    description:
-      "Desarrollo de un CRUD de gestión de esclavos utilizando Node (Express.js y TypeScript) para crear una API que recibe y procesa datos de una base de datos no relacional de MongoDB. El frontend de esta herramienta fue desarrollado en ReactJS y permite mostrar los datos de manera intuitiva en la interfaz de usuario.",
+    description: {
+      es: "Desarrollo de un CRUD de gestión de esclavos utilizando Node (Express.js y TypeScript) para crear una API que recibe y procesa datos de una base de datos no relacional de MongoDB. El frontend de esta herramienta fue desarrollado en ReactJS y permite mostrar los datos de manera intuitiva en la interfaz de usuario.",
+      en: "Development of a slave management CRUD using Node (Express.js and TypeScript) to create an API that receives and processes data from a non-relational MongoDB database. The frontend of this tool was developed in ReactJS and allows to display the data intuitively in the user interface.",
+    },
     source: "https://github.com/felipendelicia/slaves-crud",
     imgURL: "./assets/img/slaves-CRUD.png",
     stack: [
@@ -51,10 +60,13 @@ const projects = [
     ],
   },
   {
-    name:"🏫 codeSchool",
-    description: "Desarrollo una aplicación que enseña desarrollo web. Está construida con React y utiliza TypeScript en el frontend. Para la navegación he utilizado react-router-dom y he implementado transiciones con Framer Motion.",
-    url:"https://codeschool-project.netlify.app/",
-    source:"https://github.com/felipendelicia/codeschool-project",
+    name: "🏫 codeSchool",
+    description: {
+      es: "Desarrollo una aplicación que enseña desarrollo web. Está construida con React y utiliza TypeScript en el frontend. Para la navegación he utilizado react-router-dom y he implementado transiciones con Framer Motion.",
+      en: "I'm building an app that teaches web development. It's built with React and uses TypeScript on the frontend. For navigation, it used react-router-dom and implemented transitions with Framer Motion.",
+    },
+    url: "https://codeschool-project.netlify.app/",
+    source: "https://github.com/felipendelicia/codeschool-project",
     imgURL: "./assets/img/codeSchool.png",
     stack: [
       {
@@ -65,32 +77,39 @@ const projects = [
         icon: <FontAwesomeIcon icon={faFlag} />,
         name: "Typescript",
       },
-    ]
+    ],
   },
   {
-    name:"🧪 Boyle",
-    description: "El proyecto consiste en el desarrollo de un bot de Discord en Python que realiza cálculos comunes en el campo de las ciencias exactas. Gracias a él, logramos avanzar a la feria de ciencias a nivel nacional en el año 2021.",
-    source:"https://github.com/felipendelicia/boyle-discord-bot",
+    name: "🧪 Boyle",
+    description: {
+      es: "El proyecto consiste en el desarrollo de un bot de Discord en Python que realiza cálculos comunes en el campo de las ciencias exactas. Gracias a él, logramos avanzar a la feria de ciencias a nivel nacional en el año 2021.",
+      en: "The project consists of the development of a Discord bot in Python that performs common calculations in the field of exact sciences. Thanks to it, we managed to advance to the national science fair in the year 2021.",
+    },
+
+    source: "https://github.com/felipendelicia/boyle-discord-bot",
     imgURL: "./assets/img/boyle.png",
     stack: [
       {
         icon: <FontAwesomeIcon icon={faPython} />,
         name: "Python",
-      }
-    ]
+      },
+    ],
   },
   {
-    name:"⌛ Pomodoro routine",
-    description: "El proyecto se enfoca en la implementación de la técnica Pomodoro para mejorar la eficiencia en la realización de tareas estudio y trabajo. Se trata de un reloj personalizado que permite marcar períodos de tiempo de descanso y trabajo.",
-    source:"https://github.com/felipendelicia/pomodoro-routine",
+    name: "⌛ Pomodoro routine",
+    description: {
+      es: "El proyecto se enfoca en la implementación de la técnica Pomodoro para mejorar la eficiencia en la realización de tareas estudio y trabajo. Se trata de un reloj personalizado que permite marcar períodos de tiempo de descanso y trabajo.",
+      en: "The project focuses on the implementation of the Pomodoro technique to improve efficiency in carrying out study and work tasks. It is a personalized clock that allows marking periods of rest and work time.",
+    },
+    source: "https://github.com/felipendelicia/pomodoro-routine",
     imgURL: "./assets/img/pomodoro-routine.png",
     stack: [
       {
         icon: <FontAwesomeIcon icon={faPython} />,
         name: "Python",
-      }
-    ]
-  }
+      },
+    ],
+  },
 ];
 
 export default projects;

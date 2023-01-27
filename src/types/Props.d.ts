@@ -1,6 +1,7 @@
-import { ReactElement } from "react";
+import { Dispatch, ReactElement } from "react";
 
 export type ITheme = "dark" | "light";
+export type ILenguaje = "en" | "es";
 
 export interface IProyectProps {
     name: string;
@@ -15,4 +16,9 @@ export interface IProyectProps {
 export interface IProjectSidebarProps extends IProyectProps {
     showSidebar: boolean;
     setShowSidebar: (bool:boolean)=>void
+}
+
+export interface ILanguageContext {
+    language: ILenguaje,
+    setLanguage: Dispatch<SetStateAction<ILenguaje>>
 }
