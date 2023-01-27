@@ -16,7 +16,8 @@ const projects = [
     },
     url: "https://modofixture.netlify.app/",
     source: "https://github.com/felipendelicia/MODO-fixture-frontend",
-    imgURL: "./assets/img/modo-fixture.png",
+    imgURL:
+      "https://user-images.githubusercontent.com/84806140/214992257-654f78ef-8c78-455c-b8ec-cf9e39e19a68.gif",
     stack: [
       {
         icon: <FontAwesomeIcon icon={faReact} />,
@@ -67,7 +68,8 @@ const projects = [
     },
     url: "https://codeschool-project.netlify.app/",
     source: "https://github.com/felipendelicia/codeschool-project",
-    imgURL: "./assets/img/codeSchool.png",
+    imgURL:
+      "https://user-images.githubusercontent.com/84806140/214992726-a3505773-17c6-4ce0-9d20-bcbfbfce404f.gif",
     stack: [
       {
         icon: <FontAwesomeIcon icon={faReact} />,
@@ -87,7 +89,8 @@ const projects = [
     },
 
     source: "https://github.com/felipendelicia/boyle-discord-bot",
-    imgURL: "./assets/img/boyle.png",
+    imgURL:
+      "https://user-images.githubusercontent.com/84806140/214996533-87174162-e26b-42a8-861a-200092013ab0.gif",
     stack: [
       {
         icon: <FontAwesomeIcon icon={faPython} />,
@@ -102,7 +105,8 @@ const projects = [
       en: "The project focuses on the implementation of the Pomodoro technique to improve efficiency in carrying out study and work tasks. It is a personalized clock that allows marking periods of rest and work time.",
     },
     source: "https://github.com/felipendelicia/pomodoro-routine",
-    imgURL: "./assets/img/pomodoro-routine.png",
+    imgURL:
+      "https://user-images.githubusercontent.com/84806140/214993904-bac74dc5-001c-4f99-ac8e-028f469012a2.gif",
     stack: [
       {
         icon: <FontAwesomeIcon icon={faPython} />,

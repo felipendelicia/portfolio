@@ -4,8 +4,14 @@ import { IProjectSidebarProps } from "../types/Props";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faChain, faClose } from "@fortawesome/free-solid-svg-icons";
+import language_conf from "../data/language_conf";
+import languageContext from "../context/languageContext";
+import { useContext } from "react";
 
 export default function ProjectSidebar(props: IProjectSidebarProps) {
+
+  const { language } = useContext(languageContext)
+
   useEffect(() => {
     if (props.showSidebar) {
       document.body.classList.add("no-scroll");
@@ -25,12 +31,6 @@ export default function ProjectSidebar(props: IProjectSidebarProps) {
         onClick={() => props.setShowSidebar(false)}
       ></div>
       <div className="project-sidebar">
-        <div
-          className="close-popup"
-          onClick={() => props.setShowSidebar(false)}
-        >
-          <FontAwesomeIcon icon={faClose} />
-        </div>
         <div className="project-sidebar-content">
           <div className="img-container">
             <img src={props.imgURL} alt={props.name + " sneek peek"} />
@@ -62,6 +62,14 @@ export default function ProjectSidebar(props: IProjectSidebarProps) {
                   </span>
                 );
               })}
+            </div>
+            <div
+              className="close-popup"
+              onClick={() => props.setShowSidebar(false)}
+            >
+              <p>
+                <FontAwesomeIcon icon={faClose} /> {language_conf[language].close}
+              </p>
             </div>
           </div>
         </div>

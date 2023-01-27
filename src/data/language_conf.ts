@@ -18,6 +18,8 @@ const language: any = {
 
     contact_title: "Contacto",
     contact_subtitle: "Hablemos 🗣️",
+
+    close: 'Cerrar'
   },
   en: {
     landing_title: "Felipe Nahuel Delicia",
@@ -37,6 +39,8 @@ const language: any = {
 
     contact_title: "Contact",
     contact_subtitle: "Let's talk 🗣️",
+
+    close: 'Close'
   },
 };
 
