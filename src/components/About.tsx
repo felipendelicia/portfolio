@@ -1,22 +1,23 @@
+import { useContext } from "react";
+import language_conf from '../data/language_conf'
+import languageContext from "../context/languageContext";
+
 export default function About() {
+
+  const { language } = useContext(languageContext);
+
   return (
     <div className="about-component-container content" id="about">
-      <h1>Sobre mi</h1>
+      <h1>{language_conf[language].about_title}</h1>
       <hr />
       <p>
-        Soy un desarrollador <b>Full Stack</b> con experiencia en la
-        implementación de interfaces con React y APIs con Node.js (utilizando
-        TypeScript). Actualmente soy estudiante de la carrera de Ciencias de la
-        Computación en la Universidad de Buenos Aires. Tengo un fuerte interés
-        en el desarrollo de aplicaciones web y estoy constantemente buscando
-        aprender nuevas tecnologías y mejorar mis habilidades.
+        {language_conf[language].about_description}
       </p>
       <h3>
-        🎊 Actualmente me encuentro estudiando y buscando oportunidades para
-        expandir mi carrera en el área del desarrollo Full Stack.
+        {language_conf[language].about_blockquote}
       </h3>
       <p>
-        Puedes ver toda mi formacion y experiencia laboral en detalle en{" "}
+        {language_conf[language].about_linkedin}{" "}
         <a
           href="https://www.linkedin.com/in/felipe-nahuel-delicia-b2487119a/"
           target="_blank"

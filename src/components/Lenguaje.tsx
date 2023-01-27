@@ -24,7 +24,7 @@ export const MobileLenguaje = () => {
 export const DesktopLenguaje = () => {
   const { language, setLanguage } = useContext(languageContext);
 
-  const handleChange = (language: ILenguaje) => setLanguage(language); console.log(language)
+  const handleChange = (language: ILenguaje) => setLanguage(language);
 
   return (
     <div className="switch-theme">
