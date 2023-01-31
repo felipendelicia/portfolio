@@ -4,6 +4,7 @@ import {
   faDiagramProject,
   faGraduationCap,
   faPaperPlane,
+  faBriefcase
 } from "@fortawesome/free-solid-svg-icons";
 
 const sections = [
@@ -14,6 +15,14 @@ const sections = [
     },
     path: "#about",
     icon: <FontAwesomeIcon icon={faComment} />,
+  },
+  {
+    title: {
+      es: "Experiencia",
+      en: "Experience",
+    },
+    path: "#experience",
+    icon: <FontAwesomeIcon icon={faBriefcase} />,
   },
   {
     title: {
@@ -38,7 +47,7 @@ const sections = [
     },
     path: "#contact",
     icon: <FontAwesomeIcon icon={faPaperPlane} />,
-  },
+  }
 ];
 
 export default sections;

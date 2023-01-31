@@ -6,6 +6,7 @@
 .switch-theme p {
   padding: 5px 15px;
   border-radius: 10px;
+  cursor: pointer;
   transition: backgroud-color, color 0.5s ease-in-out;
 }
 

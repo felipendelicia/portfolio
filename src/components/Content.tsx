@@ -1,6 +1,7 @@
 import '../styles/Content.css'
 import About from './About';
 import Contact from './Contact';
+import Experience from './Experience';
 import Formation from './Formation';
 import Landing from './Landing';
 import Portfolio from './Portfolio';
@@ -10,6 +11,7 @@ function Content() {
   <div className="content-component-container">
     <Landing/>
     <About/>
+    <Experience/>
     <Formation/>
     <Portfolio/>
     <Contact/>
