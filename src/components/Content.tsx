@@ -8,14 +8,19 @@ import Portfolio from './Portfolio';
 
 function Content() {
   return (
-  <div className="content-component-container">
-    <Landing/>
-    <About/>
-    <Experience/>
-    <Formation/>
-    <Portfolio/>
-    <Contact/>
-  </div>
+    <div className="content-component-container">
+      <Landing />
+      <hr />
+      <About />
+      <hr />
+      <Experience />
+      <hr />
+      <Formation />
+      <hr />
+      <Portfolio />
+      <hr />
+      <Contact />
+    </div>
   )
 }
 
