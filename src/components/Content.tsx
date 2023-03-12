@@ -10,15 +10,15 @@ function Content() {
   return (
     <div className="content-component-container">
       <Landing />
-      <hr />
-      <About />
-      <hr />
+      <hr id="about"/>
+      <About/>
+      <hr id="experience"/>
       <Experience />
-      <hr />
+      <hr id="formation"/>
       <Formation />
-      <hr />
+      <hr id="portfolio"/>
       <Portfolio />
-      <hr />
+      <hr id="contact"/>
       <Contact />
     </div>
   )

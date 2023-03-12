@@ -8,7 +8,7 @@ export default function Formation() {
   const { language } = useContext(languageContext);
 
   return (
-    <div className="formation-component-container content" id="formation">
+    <div className="formation-component-container content">
       <h1>{language_conf[language].formation_title}</h1>
       <hr />
       <div className="formation-blocks">

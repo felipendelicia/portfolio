@@ -38,6 +38,7 @@ export default function ProjectSidebar(props: IProjectSidebarProps) {
           <div className="project-content">
             <h2>{props.name}</h2>
             <p>{props.description}</p>
+            <p>{props.date}</p>
             <div className="project-links">
               <h4>
                 <a href={props.source} target="_blank" rel="noreferrer">

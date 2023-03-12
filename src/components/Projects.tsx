@@ -1,10 +1,10 @@
-import projects from "../data/projects";
 import "../styles/Projects.css";
 import Project from "./Project";
 import languageContext from "../context/languageContext";
 import { useContext } from "react";
+import { IProjectsProps } from "../types/Props";
 
-export default function Projects() {
+export default function Projects({projects}:IProjectsProps) {
 
   const { language } = useContext(languageContext)
 
@@ -12,7 +12,8 @@ export default function Projects() {
     <div className="projects-component-container">
       {projects.map((project, i) => {
         return (
-          <Project
+          <Project 
+            date={project.date ? project.date[language] : undefined}
             name={project.name}
             description={project.description[language]}
             url={project.url}

@@ -15,7 +15,40 @@ const experience = [
     url: "https://www.tiendafc.com",
     source: "https://github.com/lucasdellasala/cash-price",
     imgURL:
-      "https://user-images.githubusercontent.com/84806140/214992257-654f78ef-8c78-455c-b8ec-cf9e39e19a68.gif",
+      "https://user-images.githubusercontent.com/84806140/224500403-f79dda0a-1746-4c69-b2ae-dbe253eb4408.gif",
+    date: {
+      es: 'Octubre 2022 - Noviembre 2022',
+      en: 'October 2022 - November 2022'
+    },
+    stack: [
+      {
+        icon: <FontAwesomeIcon icon={faReact} />,
+        name: "React.js",
+      },
+      {
+        icon: <FontAwesomeIcon icon={faFlag} />,
+        name: "Typescript",
+      },
+      {
+        icon: <FontAwesomeIcon icon={faNodeJs}/>,
+        name: 'NodeJs'
+      }
+    ],
+  },
+  {
+    name: "📜 Perk-vtex-app",
+    description: {
+      es: "Realice una refactorización y repare los errores en el código de esta API perteneciente a una app de VTEX. Esta API está encargada de enviar las garantías extendidas disponibles para sus respectivos productos.",
+      en: "Refactor and fix errors in the code of this API belonging to a VTEX app. This API is in charge of sending the extended warranties available for their respective products.",
+    },
+    url: "https://www.killstore.cl/",
+    source: "https://github.com/lucasdellasala/perk-vtex-app",
+    imgURL:
+      "https://user-images.githubusercontent.com/84806140/224555625-fd86eefa-2fdc-493a-9afd-ef56753da6de.gif",
+    date: {
+      es: 'Enero 2023 - Febrero 2023',
+      en: 'January 2023 - February 2023'
+    },
     stack: [
       {
         icon: <FontAwesomeIcon icon={faReact} />,

@@ -15,7 +15,7 @@ export default function Contact() {
   const { language } = useContext(languageContext)
 
   return (
-    <div className="contact-component-container content" id="contact">
+    <div className="contact-component-container content">
       <h1>{language_conf[language].contact_title}</h1>
       <hr />
       <h3>{language_conf[language].contact_subtitle}</h3>
