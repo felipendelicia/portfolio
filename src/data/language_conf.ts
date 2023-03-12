@@ -19,6 +19,8 @@ const language: any = {
     contact_title: "Contacto",
     contact_subtitle: "Hablemos 🗣️",
 
+    experience_title: "Experiencia",
+
     close: 'Cerrar'
   },
   en: {
@@ -39,6 +41,8 @@ const language: any = {
 
     contact_title: "Contact",
     contact_subtitle: "Let's talk 🗣️",
+
+    experience_title: "Experience",
 
     close: 'Close'
   },

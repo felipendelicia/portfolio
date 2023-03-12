@@ -7,7 +7,7 @@ export default function About() {
   const { language } = useContext(languageContext);
 
   return (
-    <div className="about-component-container content" id="about">
+    <div className="about-component-container content">
       <h1>{language_conf[language].about_title}</h1>
       <hr />
       <p>

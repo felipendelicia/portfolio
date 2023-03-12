@@ -15,6 +15,7 @@ export default function Project(props: IProyectProps) {
       <div className="project-component-cotainer">
         <h3 onClick={() => setShowSidebar(true)}>{props.name}</h3>
         <p>{shortDescription + "..."}</p>
+        <p>{props.date}</p>
         <div className="poweredby">
           <span>
             <FontAwesomeIcon icon={faGithub} />{" "}
@@ -43,6 +44,7 @@ export default function Project(props: IProyectProps) {
         source={props.source}
         imgURL={props.imgURL}
         stack={props.stack}
+        date={props.date}
       />
     </>
   );
