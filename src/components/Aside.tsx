@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleUser } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Aside.css";
 import sections from "../data/sections";
 import { DesktopTheme } from "./Theme";
@@ -15,7 +13,6 @@ export default function Aside() {
       <div className="aside-centered-div">
         <section>
           <div className="section-page">
-            <FontAwesomeIcon icon={faCircleUser} />
             <a href="#landing">Felipe N. Delicia</a>
           </div>
         </section>
@@ -24,7 +21,6 @@ export default function Aside() {
           {sections.map((section, i) => {
             return (
               <div className="section-page" key={i}>
-                {section.icon}
                 <a href={section.path}>{section.title[language]}</a>
               </div>
             );

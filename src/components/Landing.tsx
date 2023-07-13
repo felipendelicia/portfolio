@@ -15,10 +15,10 @@ export default function Landing() {
       <hr />
       <h2>{language_conf[language].landing_subtitle}</h2>
       <p>
-      {language_conf[language].landing_description}{" "}
+        {language_conf[language].landing_description}{" "}
         <a href="mailto:delicia4581@gmail.com">delicia4581@gmail.com</a> ✍️
       </p>
-      <a className="download-cv" href="./assets/doc/cv.pdf" download='Felipe.pdf'>
+      <a className="download-cv" rel="noreferrer" href="https://www.canva.com/design/DAFWizzpYtM/iIX_qGpft8orOuyJEpVuyQ/edit?utm_content=DAFWizzpYtM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
         {language_conf[language].landing_button}
       </a>
       <div className="socialmedia-container">

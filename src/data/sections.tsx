@@ -14,7 +14,6 @@ const sections = [
       en: "About me",
     },
     path: "#about",
-    icon: <FontAwesomeIcon icon={faComment} />,
   },
   {
     title: {
@@ -22,7 +21,6 @@ const sections = [
       en: "Experience",
     },
     path: "#experience",
-    icon: <FontAwesomeIcon icon={faBriefcase} />,
   },
   {
     title: {
@@ -30,7 +28,6 @@ const sections = [
       en: "Formation",
     },
     path: "#formation",
-    icon: <FontAwesomeIcon icon={faGraduationCap} />,
   },
   {
     title: {
@@ -38,7 +35,6 @@ const sections = [
       en: "Portfolio",
     },
     path: "#portfolio",
-    icon: <FontAwesomeIcon icon={faDiagramProject} />,
   },
   {
     title: {
@@ -46,7 +42,6 @@ const sections = [
       en: "Contact",
     },
     path: "#contact",
-    icon: <FontAwesomeIcon icon={faPaperPlane} />,
   }
 ];
 
