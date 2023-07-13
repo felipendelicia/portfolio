@@ -1,12 +1,3 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faComment,
-  faDiagramProject,
-  faGraduationCap,
-  faPaperPlane,
-  faBriefcase
-} from "@fortawesome/free-solid-svg-icons";
-
 const sections = [
   {
     title: {

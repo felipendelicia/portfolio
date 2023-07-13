@@ -17,12 +17,17 @@ export default function Project(props: IProyectProps) {
         <p>{shortDescription + "..."}</p>
         <p>{props.date}</p>
         <div className="poweredby">
-          <span>
-            <FontAwesomeIcon icon={faGithub} />{" "}
-            <a href={props.source} target="_blank" rel="noreferrer">
-              source
-            </a>
-          </span>
+
+          {props.source ? (
+            <span>
+              <FontAwesomeIcon icon={faGithub} />{" "}
+              <a href={props.source} target="_blank" rel="noreferrer">
+                source
+              </a>
+            </span>
+          ) : (
+            <></>
+          )}
           {props.url ? (
             <span>
               <FontAwesomeIcon icon={faChain} />{" "}
