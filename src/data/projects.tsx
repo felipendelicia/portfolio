@@ -4,6 +4,7 @@ import {
   faNode,
   faEnvira,
   faPython,
+  faUnity,
 } from "@fortawesome/free-brands-svg-icons";
 import { faFlag, faTruckFast } from "@fortawesome/free-solid-svg-icons";
 
@@ -114,6 +115,22 @@ const projects = [
       },
     ],
   },
+  {
+    name: "☄️ OTTO",
+    description: {
+      es: "Creé un juego denominado OTTO para participar en la GMTK Game Jam, cuya temática era 'Roles invertidos'. El objetivo del juego es jugar al famoso juego 'Pong', pero en lugar de controlar las paletas, controlamos la aceleración de la pelota o asteroide. Utilizamos Unity como plataforma de desarrollo y aprovechamos su controlador de versiones durante todo el proceso.",
+      en: "I developed a game called OTTO, which participated in the GMTK Game Jam with the theme 'Inverted Roles'. The purpose of the game is to play the well-known game 'Pong', but instead of controlling the paddles, we control the acceleration of the ball or asteroid. We developed it using Unity as the working environment and utilized its version control system throughout the process.",
+    },
+    url: "https://lucasdellasala.itch.io/otto",
+    imgURL:
+      "https://user-images.githubusercontent.com/84806140/253340832-b77ff4a7-d23d-4362-ac2d-bbf1de9d6877.gif",
+    stack: [
+      {
+        icon: <FontAwesomeIcon icon={faUnity} />,
+        name: "Unity",
+      },
+    ],
+  }
 ];
 
 export default projects;

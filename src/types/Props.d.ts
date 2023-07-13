@@ -7,7 +7,7 @@ export interface IProyectProps {
   name: string;
   description: string;
   url: string | undefined;
-  source: string;
+  source?: string;
   imgURL: string;
   stack: { icon: ReactElement; name: string }[];
   date?: string;
@@ -28,7 +28,7 @@ export interface IProjectsProps {
     name: string;
     description: { en: string; es: string };
     url?: string;
-    source: string;
+    source?: string;
     imgURL: string;
     date?: { en: string; es: string };
     stack: { icon: ReactElement; name: string }[];

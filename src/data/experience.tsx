@@ -64,6 +64,31 @@ const experience = [
       }
     ],
   },
+  {
+    name: "📲 No te distraigas",
+    description: {
+      es: "He creado esta aplicación web para una organización sin fines de lucro conocida como 'Minu'. Su objetivo era digitalizar el popular 'juego de las distracciones' que presentan en diversas escuelas. Esta aplicación es el resultado de esa digitalización. La premisa central de la aplicación consiste en un juego digital que demuestra la vulnerabilidad que experimentamos al utilizar el teléfono celular mientras conducimos.",
+      en: "I developed this web application for a non-governmental organization called 'Minu'. They wanted to digitize the 'game of distractions' that they showcase in different schools, and this application is the outcome of that digitization. The main premise of the application includes a digital game that demonstrates how vulnerable we are when using our cell phones while driving.",
+    },
+    url: "https://notedistraigas.netlify.app/",
+    source: "https://github.com/proyectomandarina/minu-game-client",
+    imgURL:
+      "https://user-images.githubusercontent.com/84806140/253344082-99ec2f4f-7360-4f5b-a594-46ebba49fa8c.gif",
+      date: {
+        es: 'Marzo 2023 - Junio 2023',
+        en: 'March 2023 - June 2023'
+      },
+    stack: [
+      {
+        icon: <FontAwesomeIcon icon={faReact} />,
+        name: "React.js",
+      },
+      {
+        icon: <FontAwesomeIcon icon={faFlag} />,
+        name: "Typescript",
+      },
+    ],
+  }
 ];
 
 export default experience;

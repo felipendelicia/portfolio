@@ -1,53 +1,25 @@
-# Portfolio
-Mi portfolio con todos mis proyectos y experiencias profesionales.
-
-
-## Uso
-
-En el directorio del proyecto podemos correr:
-
-    npm start
-
-Corre el proyecto en modo desarrollador.
-Abrir [http://localhost:3000](http://localhost:3000) para visualizarlo en el navegador.
-
-    npm test
-
-Lanza los test de la aplicacion.
-
-    npm run build
-
-Crea una build de la app para produccion en la carpeta `build`.
-
-    npm run eject
-
-Elimina la carpeta `build`.
-
-## Estructura de los directorios
-
-├── src\
-│   ├── components\
-│   ├── context\
-│   ├── data\
-│   ├── styles\
-│   ├── types\
-│   ├── App.tsx\
-│   ├── App.css\
-│   ├── index.tsx\
-│   ├── normalize.css\
-│   ├── var.css\
-├── public\
-│   ├── assets\
-│   │   ├── images\
-│   │   ├── doc\
-│   ├── index.html\
-│   ├── favicon.png\
-├── package.json\
-├── package-lock.json\
-├── tsconfig.json\
-├── .gitignore\
-├── README.md
-
-## Imagenes
-
-![imagen](https://github.com/felipendelicia/portfolio/assets/84806140/f1628fcd-f579-4bc4-b46a-b3326bd5e1a5)
+<div style="display: flex; flex-direction: column; gap: 20px;">
+    <div>
+        <h2>¡Hola! Soy Felipe 👋</h2>
+        <p>Soy un desarrollador fullstack apasionado por el código limpio y las soluciones creativas. Me encargo de trabajar con TypeScript, React, Node.js, y Express para crear aplicaciones web que sean intuitivas y fáciles de usar.</p>
+        <p>Podes encontrar mi portafolio <a href="https://felipedelicia.netlify.app/">acá 🙋</a></p>
+    </div>
+    <div>
+        <h3>📧 Contacto</h3>
+        <p>Email: <a href="emailto:delicia4581@gmail.com">delicia4581@gmail.com</a></p>
+        <p>Linkedin: <a href="https://www.linkedin.com/in/felipe-nahuel-delicia-b2487119a/">Felipe Nahuel Delicia</a></p>
+        <p>Twitter: <a href="https://twitter.com/felipendelicia">@felipendelicia</a></p>
+    </div>
+    <div>
+        <h3>🎉 ¡Gracias por visitar mi perfil de Github!</h3>
+        <p>No dudes en echar un vistazo a mis proyectos y contactarme si tienes alguna pregunta o simplemente quieres charlar sobre tecnología. ¡Nos vemos en el mundo digital!</p>
+    </div>
+    <div>
+        <img src="https://img.icons8.com/color/24/000000/typescript.png"/>  
+        <img src="https://img.icons8.com/color/24/000000/react-native.png"/>  
+        <img src="https://img.icons8.com/color/24/000000/nodejs.png"/>  
+        <img src="https://img.icons8.com/color/24/000000/javascript.png"/>  
+        <img src="https://img.icons8.com/color/24/000000/mongodb.png"/>  
+        <img src="https://img.icons8.com/color/24/000000/mysql-logo.png"/>
+    </div>
+</div>

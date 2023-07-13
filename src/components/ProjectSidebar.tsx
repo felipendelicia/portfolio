@@ -40,11 +40,15 @@ export default function ProjectSidebar(props: IProjectSidebarProps) {
             <p>{props.description}</p>
             <p>{props.date}</p>
             <div className="project-links">
-              <h4>
-                <a href={props.source} target="_blank" rel="noreferrer">
-                  <FontAwesomeIcon icon={faGithub} /> source
-                </a>
-              </h4>
+              {props.source ? (
+                <h4>
+                  <a href={props.source} target="_blank" rel="noreferrer">
+                    <FontAwesomeIcon icon={faGithub} /> source
+                  </a>
+                </h4>
+              ) : (
+                <></>
+              )}
               {props.url ? (
                 <h4>
                   <a href={props.url} target="_blank" rel="noreferrer">
