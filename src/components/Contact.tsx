@@ -2,23 +2,32 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
-  faReact,
+  faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
-import { faInbox, faFlag } from "@fortawesome/free-solid-svg-icons";
+import { faInbox } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Contact.css";
 import { useContext } from "react";
 import languageContext from "../context/languageContext";
-import language_conf from '../data/language_conf'
+import language_conf from "../data/language_conf";
 
 export default function Contact() {
-
-  const { language } = useContext(languageContext)
+  const { language } = useContext(languageContext);
 
   return (
     <div className="contact-component-container content">
       <h1>{language_conf[language].contact_title}</h1>
       <hr />
       <h3>{language_conf[language].contact_subtitle}</h3>
+      <p>
+        <FontAwesomeIcon icon={faTiktok} /> TikTok{" "}
+        <a
+          href="https://www.tiktok.com/@1felipo"
+          target="_blank"
+          rel="noreferrer"
+        >
+          @1felipo
+        </a>
+      </p>
       <p>
         <FontAwesomeIcon icon={faLinkedin} /> Linkedin{" "}
         <a
@@ -53,16 +62,7 @@ export default function Contact() {
         >
           <FontAwesomeIcon icon={faGithub} /> source
         </a>
-        {' '}- powered by:{" "}
       </h4>
-      <div className="tech-contact">
-        <span className="react">
-          <FontAwesomeIcon icon={faReact} /> React.js
-        </span>
-        <span className="typescript">
-          <FontAwesomeIcon icon={faFlag} /> Typescript
-        </span>
-      </div>
     </div>
   );
 }

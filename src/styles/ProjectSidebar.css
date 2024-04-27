@@ -39,6 +39,9 @@
     color: var(--secundary-color);
     cursor: pointer;
     z-index: 1000;
+    width: 50%;
+    margin-top: 30px;
+    align-self: center;
 }
 
 .project-sidebar-content{
@@ -76,15 +79,9 @@
 
 .project-stack{
     width: 70%;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    gap: 10px;
-}
-
-@media screen and (max-width: 1100px) {
-    .project-stack{
-        grid-template-columns: 50% 50%;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 @media screen and (max-width: 700px) {

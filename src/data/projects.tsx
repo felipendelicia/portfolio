@@ -130,7 +130,7 @@ const projects = [
         name: "Unity",
       },
     ],
-  }
+  },
 ];
 
 export default projects;

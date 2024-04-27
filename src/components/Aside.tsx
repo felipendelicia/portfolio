@@ -13,7 +13,7 @@ export default function Aside() {
       <div className="aside-centered-div">
         <section>
           <div className="section-page">
-            <a href="#landing">Felipe N. Delicia</a>
+            <a href="#landing">Felipe</a>
           </div>
         </section>
         <hr />
